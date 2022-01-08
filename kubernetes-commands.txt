@@ -1,0 +1,11 @@
+ Id CommandLine                                                                                                                            
+  -- -----------                                                                                                                            
+   1 kubectl get pods                                                                                                                       
+   2 kubectl apply -f bb.yml                                                                                                                
+   3 kubectl delete -f bb.yml                                                                                                               
+   4 kubectl apply -f bb.yml                                                                                                                
+   5 kubectl get pods                                                                                                                       
+   6 kubectl get deployments                                                                                                                
+   7 kubectl get services                                                                                                                   
+   8 kubectl delete -f bb.yml                                                                                                               
+   9 kubectl get pods                                                                                                                       
