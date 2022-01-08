@@ -1,0 +1,382 @@
+    1  ls
+    2  cd ..
+    3  cd bin
+    4  cat sh
+    5  clear
+    6  cd
+    7  clear
+    8  docker ps
+    9  docker images
+   10  python3 -m pip install flask
+   11  clear
+   12  docker run mysql
+   13  docker run -i mysql
+   14  docker run ubuntu
+   15  docker run -i ubuntu
+   16  docker ps
+   17  DOCKER ps -a
+   18  docker ps -a
+   19  docker-compose --version
+   20  cd /
+   21  cd mnt
+   22  ls
+   23  cd d
+   24  ls
+   25  cd Radheya Karna
+   26  cat KR Boinapalli.pdf
+   27  cat 'KR Boinapalli.pdf'
+   28  cd /mnt/c/Users/home/Downloads/getting-started-master
+   29  ls
+   30  cd app
+   31  ls
+   32  cd
+   33  docker ps -a
+   34  docker rm 439 147 afa f78 ab6 707 316 301 
+   35  docker ps -a
+   36  clear
+   37  cd app
+   38  docker build -t koteswararao221/task-completed
+   39  docker build -t koteswararao221/task-completed .
+   40  docker images
+   41  docker run -dp 3000:3000  e95fbab9c487
+   42  docker ps
+   43  docker rm -f babe
+   44  docker run -dp 3000:3000  e95fbab9c487
+   45  docker ps
+   46  docker stop 9bb
+   47  docker build -t koteswararao221/task-completed .
+   48  docker images
+   49  docker rmi e95fbab9c487
+   50  docker rmi -f e95fbab9c487
+   51  docker images
+   52  docker run -dp 3000:3000  koteswararao221/task-completed
+   53  docker ps
+   54  docker push koteswararao221/task-completed
+   55  docker ps
+   56  docker stop 2b5
+   57  echo --------------------------------------------------
+   58  docker run -d ubuntu bash -c "shuf -i 1-1000 -n 1 -o /data.txt && tail -f /dev/null"
+   59  docker ps
+   60  docker exec 75c34daf9304 ls
+   61  docker run -d ubuntu bash
+   62  docker ps
+   63  docker exec 75c34daf9304 cat data.txt
+   64  docker run ubuntu ls
+   65  docker ps
+   66  docker rm -f 75c34daf9304
+   67  docker ps -a
+   68  echo -----------------------------------------------------
+   69  docker start 2b5
+   70  docker ps
+   71  docker run -dp 3001:3000 koteswararao221/task-completed 
+   72  docker ps
+   73  echo -------------volumes--------------------------
+   74  docker volume create doubtvolume 
+   75  docker run -dp 3002:3000 -v doubtvolume:/etc/todos task-completed
+   76  docker run -dp 3002:3000 -v doubtvolume:/etc/todos koteswararao221/task-completed
+   77  docker ps
+   78  docker run -dp 3003:3000 -v doubtvolume:/etc/todos koteswararao221/task-completed
+   79  docker ps
+   80  docker volume inspect doubtvolume
+   81  docker stop d25 7c5 861 2b5
+   82  echo ----------------------dev-mode-container--------------
+   83  docker ps
+   84  docker run -dp 3000:3000 -w /app -v "$(pwd):/app" node:12-alpine sh -c "yarn install && yarn run dev"
+   85  docker ps
+   86  docker run -dp 3001:3000 -w /app -v "$(pwd):/app" node:12-alpine sh -c "yarn install && yarn run dev"
+   87  docker ps
+   88  echo ---------------------------doubt above -------------------------------
+   89  echo ---------------network--------------------------
+   90  docker network create todo-network
+   91  docker run -d --network todo-network --network-alias mysql -v todo-mysql-database:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=todos mysql:5.7
+   92  docker ps
+   93  docker exec -it ea27b9f8c8c9 mysql -u root -p
+   94  docker run -it --network todo-network  nicolaka/netshoot
+   95  docker exec -it ea27b9f8c8c9 mysql -u root -p
+   96  docker run -dp 3004:3000 -w /app -v "$(pwd):/app" --network todo-network -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=secret -e MYSQL_DB=todos node:12-alpine sh -c "yarn install && yarn run dev"
+   97  docker ps
+   98  docker run -dp 3005:3000 -w /app -v "$(pwd):/app" --network todo-network -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=secret -e MYSQL_DB=todos node:12-alpine sh -c "yarn install && yarn run dev"
+   99  docker ps
+  100  docker exec -it ea27b9f8c8c9 mysql -u root -p
+  101  echo -------------------docker compose------------------------------
+  102  docker-compose up -d
+  103  docker run -dp 3008:3000 -w /app -v "$(pwd):/app" node:12-alpine sh -c "yarn install && yarn run dev"
+  104  docker run -dp 3009:3000 -w /app -v "$(pwd):/app" node:12-alpine sh -c "yarn install && yarn run dev"
+  105  docker ps
+  106  docker rm -f 211 fa7 a35 
+  107  docker rm -f 784 0b0 b7a ea27 96b
+  108  docker ps
+  109  docker rm -f c0e2
+  110  docker ps -a
+  111  docker rm 354 d25 7c5 861 500 5fe 2b5
+  112  docker ps -a
+  113  docker images
+  114  docker rmi 9322 252 c61 321
+  115  docker images
+  116  clear
+  117  docker ps
+  118  clear
+  119  sudo apt-get upadate
+  120  sudo apt update
+  121  git --version
+  122  clear
+  123  sudo apt-get -y python
+  124  sudo apt install -y python
+  125  python --version
+  126  python3
+  127  ansible --version
+  128  clear
+  129  git version
+  130  git config --list
+  131  git config user.name
+  132  clear
+  133  mkdir myquotebook
+  134  cd myquotebook
+  135  cat > happiness.txt
+  136  cat happiness.txt
+  137  git init
+  138  ls -a
+  139  git add happiness.txt
+  140  git status
+  141  git log
+  142  git commit -m "Initial commit"
+  143  git config --global user.email "koteswarb221@gmail.com"
+  144  git config --glabal user.name "krboinapalli"
+  145  git config --global user.name "krboinapalli"
+  146  git commit -m "Initial commit"
+  147  git status
+  148  git log
+  149  vi happiness.txt
+  150  git status
+  151  git commit -m "second commit"
+  152  git status
+  153  git add happiness.txt
+  154  git commit -m "second commit"
+  155  git status
+  156  git log
+  157  cat > humour.txt
+  158  git add humour.txt
+  159  git commit -m humour.txt
+  160  git log
+  161  vi happiness.txt
+  162  vi humour.txt
+  163  git status
+  164  git add happiness.txt humour.txt
+  165  git status
+  166  git commit -m "changes done"
+  167  git log
+  168  git revert -n f98435
+  169  git status
+  170  git commit -m "reverting"
+  171  git log
+  172  cat humour.txt
+  173  git reset e32ba --hard
+  174  git log
+  175  git revert HEAD 
+  176  git log
+  177  cat humour.txt
+  178  git reset HEAD~1 --hard
+  179  cat humour.txt
+  180  git log
+  181  git revert -n HEAD
+  182  git log
+  183  git reset HEAD --hard
+  184  git log
+  185  git status
+  186  git branch new_branch
+  187  git branch
+  188  git checkout new_branch
+  189  git status
+  190  git branch
+  191  ls
+  192  touch filein_newbranch.txt
+  193  ls
+  194  git checkout master
+  195  ls
+  196  git checkout newbranch
+  197  git checkout new_branch
+  198  git add .
+  199  git status
+  200  git commit -m "commiting file in newbranch"
+  201  git log
+  202  ls
+  203  git checkout master 
+  204  ls
+  205  git status
+  206  git merge new_branch
+  207  ls
+  208  git status
+  209  git remote add origin https://github.com/krboinapalli221/quotebook.git
+  210  git remote
+  211  git push origin master
+  212  cd 
+  213  echo ---------------------------------------------------------------------------
+  214  git clone https://github.com/krboinapalli221/mybooks.git
+  215  ld
+  216  ls
+  217  cd mybooks
+  218  ls
+  219  clear
+  220  mkdir Hashmum
+  221  ls
+  222  cd Hamshum
+  223  cd Hashmum
+  224  sudo adduser user1
+  225  sudo adduser user2
+  226  cd /
+  227  ls
+  228  sudo mkdir user1home
+  229  sudo mkdir user2home
+  230  ls
+  231  sudo usermod -d /user1home/user1 user1
+  232  sudo usermod -d /user2home/user2 user2
+  233  su - user1
+  234  sudo usermod -aG sudo user2
+  235  su - user2
+  236  cd InitialHashmum
+  237  sudo mv Hashinfor.txt /home
+  238  cd /home
+  239  ls
+  240  sudo cp Hashinfor.txt /home/InitialHashmum
+  241  cd
+  242  cd InitialHashmum
+  243  ls
+  244  cd /home
+  245  sudo cp Hashinfor.txt /home/krboinapalli/InitialHashum
+  246  cd
+  247  cd InitialHashum
+  248  cd InitialHashmum
+  249  ls
+  250  cd /home
+  251  sudo cp Hashinfor.txt /home/krboinapalli/InitialHashmum
+  252  cd
+  253  cd InitialHashmum
+  254  ls
+  255  sudo usermod -aG sudo user1
+  256  su - user1
+  257  echo --------------------------------------------------
+  258  mkdir InitialHashmum
+  259  cd InitialHashmum
+  260  touch Hashinfor.txt
+  261  vi Hashinfor.txt
+  262  cat Hashinfor.txt
+  263  cd ..
+  264  sudo cp -r InitialHashmum /home
+  265  cd ..
+  266  ls
+  267  cd user1
+  268  ls
+  269  cd ..
+  270  sudo cp -r InitialHashmum /user1home /user2home
+  271  su - user2
+  272  cd /
+  273  cd user2home
+  274  sudo mkdir user2
+  275  sudo usermod -d /user2home/user2 -m user2
+  276  echo -------------------------------------------
+  277  su - user1
+  278  ls -a
+  279  cd /
+  280  cd user1home
+  281  sudo mkdir user1
+  282  cd
+  283  sudo usermod -d /user1home/user1 -m user1
+  284  su - user1
+  285  history
+  286  history
+  287  clear
+  288  pwd
+  289  ls
+  290  cd mybooks
+  291  ls
+  292  cat Bhagavadgeetha.txt
+  293  cd ..
+  294  ls
+  295  cd /
+  296  ls
+  297  cd usr
+  298  ls
+  299  cd 
+  300  mkdir SampleDir
+  301  ls
+  302  mkdir -p parent/child
+  303  ls
+  304  cd parent
+  305  ls
+  306  cd child
+  307  cd ../..
+  308  pwd
+  309  cd SampleDir
+  310  history > history.txt
+  311  ls
+  312  cat history.txt
+  313  echo "this is for revision" > revision.txt
+  314  cat revision.txt
+  315  echo "another line for revision" > revision.txt
+  316  cat revision.txt
+  317  echo "this line won't miss" >> revision.txt
+  318  cat revision.txt
+  319  ls
+  320  cat *.txt
+  321  cat *.txt >mix.txt
+  322  cat mix.txt
+  323  echo "we are again adding this to mix.txt" >> mix.txt
+  324  cat mix.txt
+  325  less mix.txt
+  326  ls
+  327  mv mix.txt /home/krboinapalli/parent
+  328  ls
+  329  cd
+  330  cd parent
+  331  ls
+  332  cat mix.txt
+  333  mv child /home/krboinapalli
+  334  cd
+  335  ls
+  336  cd mybooks
+  337  ls
+  338  cp bhagavadgeetha.txt > search_for_meaning.txt
+  339  cp bhagavadgeetha.txt search_for_meaning.txt
+  340  cp Bhagavadgeetha.txt search_for_meaning.txt
+  341  cat search_for_meaning.txt
+  342  rm Bhagavadgeetha.txt
+  343  ls
+  344  mv commands.txt histor.txt
+  345  ls
+  346  cd
+  347  sudo adduser koteswararao
+  348  ls -lh
+  349  cat /etc/passwd
+  350  ls -alh
+  351  echo ---------------------------------------------
+  352  su - koteswararao
+  353  sudo usermod -d /kothome/ kot
+  354  sudo usermod -d /kothome/kot -m kot
+  355  su - koteswararao
+  356  cd ..
+  357  ls
+  358  sudo rm user1home
+  359  sudo rm -r user1home
+  360  sudo rm -r user2home
+  361  ls
+  362  sudo mkdir kothome
+  363  cd kothome
+  364  cd 
+  365  sudo usermod -d /kothome/ koteswararao
+  366  sudo adduser kot
+  367  su - kot
+  368  sudo usermod -aG sudo koteswararao
+  369  su - koteswararao
+  370  git clone https://github.com/krboinapalli221/ubuntucommands.git
+  371  history > commands.txt
+  372  cd ubuntucommands
+  373  git init
+  374  git status
+  375  git add commands.txt
+  376  git commit -m "committed"
+  377  git push
+  378  git push --all origin
+  379  git remote add origin  1  ls
+  380  git clone https://github.com/krboinapalli221/linux-commands.git
+  381  cd linux-commands
+  382  history > history.txt
