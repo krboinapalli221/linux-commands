@@ -1,0 +1,6 @@
+ Id CommandLine                                                                                                                            
+  -- -----------                                                                                                                            
+   1 docker ps                                                                                                                              
+   2 docker images                                                                                                                          
+   3 docker run -p 3000:80 koteswararao221/simplewhale                                                                                      
+
